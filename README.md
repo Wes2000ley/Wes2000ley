@@ -22,6 +22,10 @@ Native multi-client Windows VPN built in C++23 with Wintun, Winsock, encrypted T
 
 Full-stack Go/Vue network-design and reachability simulator for modeling AWS-style accounts, VPCs, subnets, route tables, Transit Gateway, VPN attachments, customer networks, and policy boundaries before production changes.
 
+### [ElfGloss / Parf Edhellen](https://github.com/Wes2000ley/Parf-Edhellen)
+
+Public Go migration of a Tolkien-language dictionary into a source-driven, read-only service with reproducible multi-source imports, bbolt storage, search APIs, data audits, and Docker delivery.
+
 ### AWS Network Inventory
 
 Private Python platform for read-only, multi-account infrastructure inventory, search, historical change analysis, and reporting. It uses least-privilege collection roles, compressed snapshots, retention management, Docker packaging, CloudFormation, GitLab CI/CD, and automated validation.
@@ -44,4 +48,4 @@ Upstream fixes accepted into the mainline Linux kernel across tracing, crypto, T
 
 Several substantial codebases are private. I describe their architecture, engineering scope, and validation publicly without exposing source, customer data, or sensitive operational details.
 
-[LinkedIn](https://www.linkedin.com/in/wesleyatwell/) · [Engineering portfolio](https://wesleyatwell.net/)
+[Resume PDF](https://wesleyatwell.net/assets/Wesley_Atwell_Resume.pdf) · [Engineering portfolio](https://wesleyatwell.net/) · [LinkedIn](https://www.linkedin.com/in/wesleyatwell/)
