@@ -1,51 +1,41 @@
 # Wesley Atwell
 
-Solutions architect and systems builder working across cloud infrastructure, networking, systems software, and automation.
+Lead Cloud Engineer working across AWS GovCloud, platform engineering, and security automation. I lead a small cloud/security team and stay hands-on with infrastructure and software.
 
-I turn ambiguous requirements into working systems—from architecture and infrastructure as code through implementation, deployment, testing, troubleshooting, and recovery. My day-to-day stack spans AWS, Linux and Windows, Terraform/OpenTofu, Docker, GitLab CI/CD, Python, Go, C, and C++.
+[Portfolio](https://wesleyatwell.net/) · [Résumé](https://wesleyatwell.net/assets/Wesley_Atwell_Resume.pdf) · [LinkedIn](https://www.linkedin.com/in/wesleyatwell/)
 
-## Selected engineering work
+## Selected work
 
-### AOM-Chess — C++20 chess engine and validation platform
+### [AWS GovCloud platform](https://wesleyatwell.net/case-studies/aws-security-architecture.html)
 
-My favorite project and the deepest systems build in my portfolio. AOM-Chess combines bitboard move generation, alpha-beta and quiescence search, transposition tables, classical and NNUE evaluation, Syzygy tablebases, opening books, and multithreaded time-managed search.
+Architecture and operations across a dozen+ accounts. My optimization and remediation work reduced AWS spend by approximately 50% and security findings by approximately 90% over a few months.
 
-The surrounding engineering includes UCI, native ImGui, and WebAssembly front ends; cross-platform CMake builds with scalar, AVX2, and AVX-512 paths; CUDA-assisted NNUE training and dataset tooling; reproducible CuteChess SPRT A/B matches; and a validation suite covering perft, fuzzing, make/undo invariants, protocol behavior, concurrency, endgames, and performance benchmarks.
+### [AOM-Chess](https://wesleyatwell.net/case-studies/chess-engine.html)
 
-The source remains private while actively developed.
+My flagship systems project: a C++26 chess engine, CIRCUIT neural evaluator, and Python/CUDA training pipeline. The current browser build runs CIRCUIT V16, epoch 175. An earlier build was evaluated in 4,000 local games across 20 engine families; that estimate is not an official rating.
 
-### [TrueTunnel VPN](https://github.com/Wes2000ley/TrueTunnel-VPN)
+[Play the engine](https://wesleyatwell.net/chess/) · [Lichess bot](https://lichess.org/@/atwell-chess-bot)
 
-Native multi-client Windows VPN built in C++23 with Wintun, Winsock, encrypted TCP/UDP transports, Windows routing and NAT integration, a Direct3D/ImGui interface, CMake, Conan, and automated integration testing.
+### [CloudTapestry](https://wesleyatwell.net/case-studies/cloudtapestry.html)
 
-### [CloudTapestry](https://cloudtapestry.com)
-
-Full-stack Go/Vue network-design and reachability simulator for modeling AWS-style accounts, VPCs, subnets, route tables, Transit Gateway, VPN attachments, customer networks, and policy boundaries before production changes.
-
-### [ElfGloss / Parf Edhellen](https://github.com/Wes2000ley/Parf-Edhellen)
-
-Public Go migration of a Tolkien-language dictionary into a source-driven, read-only service with reproducible multi-source imports, bbolt storage, search APIs, data audits, and Docker delivery.
-
-### AWS Network Inventory
-
-Private Python platform for read-only, multi-account infrastructure inventory, search, historical change analysis, and reporting. It uses least-privilege collection roles, compressed snapshots, retention management, Docker packaging, CloudFormation, GitLab CI/CD, and automated validation.
+A Go/Vue network-design simulator. Model cloud networks, trace traffic paths, and test routing and segmentation before deployment. [Open the application](https://cloudtapestry.com/).
 
 ### [Linux kernel contributions](https://wesleyatwell.net/kernel/)
 
-Upstream fixes accepted into the mainline Linux kernel across tracing, crypto, TCP/IPv6, and netdevsim, with a focus on race safety, callback context, lifecycle cleanup, and maintainer-reviewed correctness.
+Seven commits accepted into mainline across tracing, cryptography, TCP/IPv6, and netdevsim, with links to the upstream record.
 
-### Open-source and research work
+### [TrueTunnel VPN](https://github.com/Wes2000ley/TrueTunnel-VPN)
 
-- [C++ language support and hardening for jcodemunch-mcp](https://github.com/jgravelle/jcodemunch-mcp/pull/26), including parser behavior, deterministic indexing, incremental storage, documentation, and test coverage.
-- [Prime-power cutoff tail bounds](https://github.com/Wes2000ley/prime-power-cutoff-tail-bounds), an exact-integer verifier and reproducible certificate for a mathematical threshold result.
+C++23 Windows networking with Wintun, TLS/DTLS 1.3, and a React/WebView2 desktop separated from the privileged network worker. Release 3.1.0 still awaits real-network qualification of the current desktop/worker boundary.
 
-## What I value
+### [Cloud Compliance & Host Management](https://wesleyatwell.net/case-studies/cloud-compliance-platform.html)
 
-- Owning difficult problems from design through production recovery
-- Reproducible builds, automated validation, and evidence-backed engineering
-- Clear boundaries between public proof and private customer or operational details
-- Learning whatever the mission requires and carrying the work to completion
+Python/React workflows for assessments, inventory, reporting, and host operations through AWS Systems Manager. The former standalone network inventory is now part of this suite. In development, with local application validation.
 
-Several substantial codebases are private. I describe their architecture, engineering scope, and validation publicly without exposing source, customer data, or sensitive operational details.
+## More open-source work
 
-[Resume PDF](https://wesleyatwell.net/assets/Wesley_Atwell_Resume.pdf) · [Engineering portfolio](https://wesleyatwell.net/) · [LinkedIn](https://www.linkedin.com/in/wesleyatwell/)
+- [ElfGloss / Parf Edhellen](https://github.com/Wes2000ley/Parf-Edhellen): a Go dictionary service with reproducible imports, search APIs, and Docker delivery.
+- [C++ support for jcodemunch-mcp](https://github.com/jgravelle/jcodemunch-mcp/pull/26): parser, indexing, storage, documentation, and tests.
+- [Prime-power cutoff tail bounds](https://github.com/Wes2000ley/prime-power-cutoff-tail-bounds): an exact-integer verifier and reproducible certificate.
+
+Several projects remain private; the portfolio provides public briefs and working demos.
